@@ -2,10 +2,18 @@ import dotenv from "dotenv";
 import connectDB from "./config/connectDB.js";
 import { app } from "./app.js";
 import { Server } from "socket.io";
+import path from 'path';
 
 dotenv.config();
 
 const port = process.env.PORT || 8000;
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../frontend', 'dist', 'index.html'));
+});
 
 connectDB()
   .then(() => {
@@ -47,3 +55,4 @@ connectDB()
   .catch((err) => {
     console.log(err);
   });
+
