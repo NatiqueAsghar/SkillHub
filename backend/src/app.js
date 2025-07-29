@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://skillhubconnect.vercel.app",
     credentials: true,
   })
 );
@@ -18,7 +18,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.setHeader("Access-Control-Allow-Origin", "https://skillhubconnect.vercel.app");
   res.setHeader("Access-Control-Allow-Credentials", "true");
   next();
 });
