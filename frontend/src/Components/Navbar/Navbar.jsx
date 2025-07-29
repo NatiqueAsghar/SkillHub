@@ -14,7 +14,7 @@ const UserProfileDropdown = () => {
     setUser(null);
     try {
       await axios.get("/auth/logout");
-      window.location.href = "http://localhost:5173/login";
+      window.location.href = "https://skillhub-ejpm.onrender.com/login";
     } catch (error) {
       console.error(error.response?.data?.message || error);
     }
