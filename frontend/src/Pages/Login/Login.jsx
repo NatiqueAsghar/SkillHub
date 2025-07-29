@@ -5,7 +5,7 @@ const Login = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:8000/auth/google";
+    window.location.href = "https://skillhub-ejpm.onrender.com/auth/google";
   };
 
   return (
