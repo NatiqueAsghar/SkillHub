@@ -18,10 +18,10 @@ RUN rm -rf node_modules .env
 # Install Node.js dependencies in the container app directory
 RUN npm install
 
-ARG VITE_LOCALHOST
+ARG VITE_SERVER_URL
 
 #write the environment variables to a .env file
-RUN echo "VITE_LOCALHOST=${VITE_LOCALHOST}" > .env
+RUN echo "VITE_SERVER_URL=${VITE_SERVER_URL}" > .env
 
 RUN cat .env
 
