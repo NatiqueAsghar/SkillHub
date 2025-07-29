@@ -31,7 +31,7 @@ export const googleAuthHandler = passport.authenticate("google", {
 });
 
 export const googleAuthCallback = passport.authenticate("google", {
-  failureRedirect: "http://localhost:5173/login",
+  failureRedirect: "skillhubconnect.vercel.app/login",
   session: false,
 });
 
@@ -46,7 +46,7 @@ export const handleGoogleLoginCallback = asyncHandler(async (req, res) => {
       expires: expiryDate,
       secure: false,
     });
-    return res.redirect(`http://localhost:5173/discover`);
+    return res.redirect(`skillhubconnect.vercel.app/discover`);
   }
 
   let unregisteredUser = await UnRegisteredUser.findOne({
@@ -66,7 +66,7 @@ export const handleGoogleLoginCallback = asyncHandler(async (req, res) => {
     expires: expiryDate,
     secure: false,
   });
-  return res.redirect("http://localhost:5173/register");
+  return res.redirect("skillhubconnect.vercel.app/register");
 });
 
 export const handleLogout = (req, res) => {
