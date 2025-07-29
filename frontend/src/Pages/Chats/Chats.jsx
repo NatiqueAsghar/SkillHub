@@ -63,7 +63,7 @@ const Chats = () => {
     try {
       setChatLoading(true);
       const tempUser = JSON.parse(localStorage.getItem("userInfo"));
-      const { data } = await axios.get("http://localhost:8000/chat");
+      const { data } = await axios.get("https://skillhub-ejpm.onrender.com/chat");
       toast.success(data.message);
       if (tempUser?._id) {
         const temp = data.data.map((chat) => {
@@ -99,7 +99,7 @@ const Chats = () => {
     try {
       setChatMessageLoading(true);
       const { data } = await axios.get(
-        `http://localhost:8000/message/getMessages/${chatId}`
+        `https://skillhub-ejpm.onrender.com/message/getMessages/${chatId}`
       );
       setChatMessages(data.data);
       setMessage("");
