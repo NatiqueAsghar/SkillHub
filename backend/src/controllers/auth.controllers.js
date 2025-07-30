@@ -44,7 +44,8 @@ export const handleGoogleLoginCallback = asyncHandler(async (req, res) => {
     res.cookie("accessToken", jwtToken, {
       httpOnly: true,
       expires: expiryDate,
-      secure: false,
+      sameSite: "None",
+      secure: true,
     });
     return res.redirect(`https://skillhubconnect.vercel.app/discover`);
   }
@@ -64,7 +65,8 @@ export const handleGoogleLoginCallback = asyncHandler(async (req, res) => {
   res.cookie("accessTokenRegistration", jwtToken, {
     httpOnly: true,
     expires: expiryDate,
-    secure: false,
+    sameSite: "None",
+    secure: true,
   });
   return res.redirect("https://skillhubconnect.vercel.app/register");
 });

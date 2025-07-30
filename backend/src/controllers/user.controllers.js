@@ -323,7 +323,8 @@ export const registerUser = async (req, res) => {
   res.cookie("accessToken", jwtToken, {
     httpOnly: true,
     expires: expiryDate,
-    secure: false,
+    secure: true,
+    sameSite: "None",
   });
   res.clearCookie("accessTokenRegistration");
   return res
