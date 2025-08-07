@@ -52,7 +52,7 @@ const LandingPage = () => {
               />
               <div>
                 <div className="flex items-center justify-between">
-                  <p className="font-medium">Faiz</p>
+                  <p className="font-medium">Nabil</p>
                   <div className="flex items-center text-yellow-500">
                     <FaStar className="text-sm" />
                     <span className="ml-1 text-sm">4.0</span>
@@ -88,7 +88,7 @@ const LandingPage = () => {
               />
               <div>
                 <div className="flex items-center justify-between">
-                  <p className="font-medium">Ayesha</p>
+                  <p className="font-medium">Liza</p>
                   <div className="flex items-center text-yellow-500">
                     <FaStar className="text-sm" />
                     <span className="ml-1 text-sm">5.0</span>
