@@ -24,7 +24,6 @@ const LandingPage = () => {
     <div className="flex flex-col items-center relative overflow-hidden">
       <section className="min-h-screen w-full bg-bgl py-16 px-6 md:px-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Left Section */}
           <div className="md:w-1/2 md:pb-none pb-10">
             <h1 className="text-4xl md:text-6xl font-bold text-txt mb-6 leading-tight">
               Swap Skills with <br /> Skilled Individuals
@@ -47,7 +46,7 @@ const LandingPage = () => {
 
             <div className="relative z-10 bg-bgl shadow-lg p-4 rounded-xl flex items-start gap-4 w-full max-w-xs">
               <img
-                src="/public/images/user1.jpg"
+                src="/public/user1.jpg"
                 alt="Faiz"
                 className="w-10 h-10 rounded-full"
               />
@@ -83,7 +82,7 @@ const LandingPage = () => {
 
             <div className="relative z-10 bg-white shadow-lg p-4 rounded-xl flex items-start gap-4 w-full max-w-xs">
               <img
-                src="/public/images/user2.jpg"
+                src="/public/user2.jpg"
                 alt="Ayesha"
                 className="w-10 h-10 rounded-full"
               />
