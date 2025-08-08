@@ -47,7 +47,7 @@ const LandingPage = () => {
             <div className="relative z-10 bg-bgl shadow-lg p-4 rounded-xl flex items-start gap-4 w-full max-w-xs">
               <img
                 src="/public/user1.jpg"
-                alt="Faiz"
+                alt="Nabil"
                 className="w-10 h-10 rounded-full"
               />
               <div>
@@ -83,7 +83,7 @@ const LandingPage = () => {
             <div className="relative z-10 bg-white shadow-lg p-4 rounded-xl flex items-start gap-4 w-full max-w-xs">
               <img
                 src="/public/user2.jpg"
-                alt="Ayesha"
+                alt="Liza"
                 className="w-10 h-10 rounded-full"
               />
               <div>
